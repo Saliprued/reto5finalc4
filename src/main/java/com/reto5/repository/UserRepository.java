@@ -33,16 +33,17 @@ public class UserRepository {
 
     /**
      * Crea los datos del usuario
-     * @param usuario
+     * @param user
      * @return 
      */
+    
     public User create(User user) {
         return userCrudRepository.save(user);
     }
     
     /**
      * Actualiza los datos del usuario
-     * @param usuario
+     * @param user
      * @return 
      */
     public void update(User user) {
@@ -51,7 +52,7 @@ public class UserRepository {
 
     /**
      * Borra el usuario y desaparece de la lista usuarios
-     * @param usuario 
+     * @param user
      */
     public void delete(User user) {
         userCrudRepository.delete(user);
